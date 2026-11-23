@@ -177,3 +177,13 @@ h1 > span:nth-child(2) { font-style: italic; }
   .hero-image .principal { max-height: 95px; width: auto; }
   .brand { gap: .4rem; }
 }
+
+.languages { display: inline-flex; gap: .2rem; align-items: center; border-inline-start: 1px solid var(--line); padding-inline-start: .65rem; }
+.languages a { padding: .2rem .3rem; font-size: .875rem; }
+.languages a[aria-current] { text-decoration: underline; text-underline-offset: .3em; color: var(--bronze); }
+.header nav { align-items: center; flex-wrap: wrap; }
+@media (max-width: 700px) {
+  .header nav { column-gap: .7rem; row-gap: .2rem; }
+  .languages { gap: 0; padding-inline-start: .35rem; }
+  h1 { white-space: normal; }
+}
